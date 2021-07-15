@@ -26,7 +26,7 @@ env:
   # 打包类型
   BUILD_TYPE: release
   # 版本名称
-  VERSION_NAME: 1.0
+  VERSION_NAME: 1.0.0
   # 版本号
   VERSION_CODE: 10
   # 密钥库文件
@@ -42,7 +42,7 @@ env:
 jobs:
   assemble:
     runs-on: ubuntu-latest
-    steps: 
+    steps:
       - name: Checkout Project
         uses: actions/checkout@v2
       - name: Cache node_modules Folder
